@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+                  
+<struts-config>
+    <form-beans>
+         <form-bean name="registerForm" type="cn.itcast.web.struts.form.RegisterForm"/>
+         <form-bean name = "loginForm" type="cn.itcast.web.struts.form.LoginForm"/>
+        
+    </form-beans>
+   <action-mappings>
+         <action path="/book"
+          type="cn.itcast.web.struts.action.BookAction"
+           parameter="method"
+          >
+           
+         </action>
+         <action path="/EditUI"
+         type="cn.itcast.web.struts.action.EditUIAction"
+         name="loginForm"
+         scope="request">
+          <forward name="toEditJsp" path="/WEB-INF/edit.jsp"/>
+         </action>
+        <action path="/check" 
+            type="cn.itcast.web.struts.action.CheckAction"
+            scope="request">
+             <forward name="toRegisterJsp" path="/WEB-INF/register.jsp" redirect="false"/>
+        </action>
+        <action path="/RegisterUI" type="cn.itcast.web.struts.action.RegisterUIAction">
+             <forward name="toRegisterJsp" path="/WEB-INF/register.jsp" redirect="false"/>
+        </action>
+       <action path="/register" type="cn.itcast.web.struts.action.RegisterAction"
+        name="registerForm"
+        scope="request"
+         validate="true" input="/WEB-INF/register.jsp">
+        </action>
+         <action path="/login" 
+         type="cn.itcast.web.struts.action.LoginAction"
+         name="loginForm"
+         scope="request"
+          validate="true" input="/WEB-INF/login.jsp"/>
+         
+      <!--   <action path="/RegisterUI" forward="/WEB-INF/register.jsp" />  -->
+      <action path="/LoginUI" forward="/WEB-INF/login.jsp" />
+        <action path="/forward" forward="/forward.jsp" unknown="true"/>
+   </action-mappings>
+          <!--   配置自定义的过渡器 -->
+     <!-- <controller processorClass="cn.itcast.web.struts.core.MyRequestProcess"/> -->
+     <message-resources parameter="/cn/itcast/web/struts/config/message"/>
+     
+</struts-config>
+
+

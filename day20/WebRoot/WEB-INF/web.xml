@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  
+    <error-page>
+        <error-code>500</error-code>
+        <location>/err_500.jsp</location>
+    </error-page>
+  <servlet>
+    <servlet-name>FromServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.FromServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ToServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ToServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetPostServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.GetPostServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.ShowServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>FromServlet</servlet-name>
+    <url-pattern>/FromServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ToServlet</servlet-name>
+    <url-pattern>/ToServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPostServlet</servlet-name>
+    <url-pattern>/GetPostServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowServlet</servlet-name>
+    <url-pattern>/ShowServlet</url-pattern>
+  </servlet-mapping>
+   <filter>
+        <filter-name>MappingFilter</filter-name>
+        <filter-class>cn.itcast.web.filter.MappingFilter</filter-class>
+   </filter>
+   <filter-mapping>
+       <filter-name>MappingFilter</filter-name>
+       <url-pattern>/FromServlet</url-pattern>
+      <!--  <dispatcher>REQUEST</dispatcher>
+       <dispatcher>FORWARD</dispatcher>
+       <dispatcher>INCLUDE</dispatcher> -->
+       <dispatcher>ERROR</dispatcher>
+   </filter-mapping>
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>cn.itcast.web.filter.EncodingFilter</filter-class>
+   </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/GetPostServlet</url-pattern>
+    </filter-mapping>
+  <!--   <filter>
+       <filter-name>GzipFilter</filter-name>
+        <filter-class>cn.itcast.web.filter.GzipFilter</filter-class>
+    </filter>
+     <filter-mapping>
+         <filter-name>GzipFilter</filter-name>
+         <servlet-name>ShowServlet</servlet-name>
+     </filter-mapping> -->
+    <!--  <filter>
+        <filter-name>CacheFilter</filter-name>
+        <filter-class>cn.itcast.web.filter.CacheFilter</filter-class>
+     </filter>
+     <filter-mapping>
+              <filter-name>CacheFilter</filter-name>
+              <servlet-name>ShowServlet</servlet-name>
+     </filter-mapping> -->
+     <filter>
+       <filter-name>ThransferFilter</filter-name>
+       <filter-class>cn.itcast.web.filter.ThransferFilter</filter-class>
+     </filter>
+   <filter-mapping>
+        <filter-name>ThransferFilter</filter-name>
+        <url-pattern>/ShowServlet</url-pattern>
+   </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

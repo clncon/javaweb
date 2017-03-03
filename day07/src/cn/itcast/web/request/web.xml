@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo1</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo2</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo3</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo4</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo4</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo5</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo5</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo6</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo6</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.itcast.web.request.LoginServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>showServlet</servlet-name>
+    <servlet-class>cn.itcast.web.request.showServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo7</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo7</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>listShow</servlet-name>
+    <servlet-class>cn.itcast.web.request.listShow</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo81</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo81</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo82</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo82</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo9</servlet-name>
+    <servlet-class>cn.itcast.web.request.Demo9</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Demo1</servlet-name>
+    <url-pattern>/Demo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo2</servlet-name>
+    <url-pattern>/Demo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo3</servlet-name>
+    <url-pattern>/Demo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo4</servlet-name>
+    <url-pattern>/Demo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo5</servlet-name>
+    <url-pattern>/Demo5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo6</servlet-name>
+    <url-pattern>/Demo6</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>showServlet</servlet-name>
+    <url-pattern>/showServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo7</servlet-name>
+    <url-pattern>/Demo7</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>listShow</servlet-name>
+    <url-pattern>/listShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo81</servlet-name>
+    <url-pattern>/Demo81</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo82</servlet-name>
+    <url-pattern>/Demo82</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo9</servlet-name>
+    <url-pattern>/Demo9</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

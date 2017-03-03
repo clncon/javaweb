@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <country>
+     <city>
+         <real>北京</real>
+         <alias>帝都</alias>
+     </city>
+     <city>
+              <real>上海</real>
+              <alias>魔都</alias>
+     </city>
+       <city>
+           <real>广州</real>
+           <alias>羊城</alias>
+       </city>
+   </country>
+</root>

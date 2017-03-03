@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root[
+    <!ELEMENT root    (student)>
+    <!ELEMENT student (name,age)>
+    <!ELEMENT name     (#PCDATA)>
+    <!ELEMENT age       (#PCDATA)> 
+]>
+<root>
+   <student>
+       <name>李华</name>
+       <age>15</age>
+   </student>
+    
+</root>

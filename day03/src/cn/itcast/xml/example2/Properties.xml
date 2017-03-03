@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<class>
+		<className>cn.itcast.xml.example2.Person</className>
+		<classMethod>run</classMethod>
+		<classMethod>jump</classMethod>
+		<argType>java.lang.String</argType>
+		<argValue>血神</argValue>
+	</class>
+</root>

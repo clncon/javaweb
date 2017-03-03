@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>Demo12</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo12</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Demo12</servlet-name>
+      <url-pattern>/qq</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Demo11</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo11</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo13</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo13</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo14</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo14</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo2</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo15</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo15</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo16</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo16</servlet-class>
+    <init-param>
+        <param-name>tel</param-name>
+        <param-value>12333546567657</param-value>
+    </init-param>
+    <init-param>
+         <param-name>email</param-name>
+         <param-value>kifids@qq.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo17</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo17</servlet-class>
+    <init-param>
+          <param-name>filepath</param-name>
+          <param-value>D:/Watch_Dogs.jpg</param-value>
+    </init-param>
+  </servlet>
+
+
+
+
+
+ <servlet-mapping>
+    <servlet-name>Demo13</servlet-name>
+    <url-pattern>/Demo13</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo11</servlet-name>
+      <url-pattern>/hh</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo14</servlet-name>
+    <url-pattern>/servlet/Demo14</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo2</servlet-name>
+    <url-pattern>/DD</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo15</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo16</servlet-name>
+    <url-pattern>/Demo16</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo17</servlet-name>
+    <url-pattern>/Demo17</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>

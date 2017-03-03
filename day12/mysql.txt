@@ -1,0 +1,168 @@
+求班级语文最高分和最低分。
+select max(chinese) as 最高分,
+       min(chinese) as 最低分
+from student;
+
+
+
+drop table if exists teacher;
+create table teacher(
+  id int,
+  name varchar(20),
+  birthday date
+);
+insert into teacher(id,name,birthday) values(1,'jack','2011-1-1');
+insert into teacher(id,name,birthday) values(2,'marry','2011-2-2');
+insert into teacher(id,name,birthday) values(3,'sisi','2011-3-3');
+
+求一个班级总分平均分。
+select avg(math+english+chinese)
+from student;
+
+select (sum(math)+sum(english)+sum(chinese))/count(*)
+from student;
+
+
+对订单表中商品归类后，显示每一类商品的总价
+select product,sum(price)
+from orders
+group by product;
+
+查询购买了几类商品，并且每类总价大于100的商品
+select product,sum(price)
+from orders
+group by product
+having sum(price)>100;
+
+where v.s. having区别：
+
+where主要用于行过滤器
+having主要用于类别过滤器，通常有having就一定出现group by,但有group by的地方，不一定出现having。
+
+
+drop table if exists teacher;
+create table teacher(
+  id int primary key auto_increment,
+  name varchar(20) not null unique,
+  birthday date
+);
+insert into teacher(name,birthday) values(NULL,'2011-1-1');
+
+
+删除主键，主键在表中只有一个，要么是一列，要么是多列
+alter table teacher drop primary key;
+
+
+
+一对一关系(方案一)：
+drop table if exists card;
+drop table if exists person;
+
+
+create table person(
+ id  int primary key auto_increment,
+ name varchar(20) not null
+);
+insert into person(name) values('jack');
+insert into person(name) values('marry');
+
+create table card(
+ id int primary key auto_increment,
+ location varchar(20) not null,
+ pid int,
+ constraint pid_FK foreign key(pid) references person(id)
+);
+insert into card(location,pid) values('BJ',1);
+insert into card(location,pid) values('GZ',2);
+insert into card(location,pid) values('CS',NULL);
+insert into card(location,pid) values('NJ',3);//出错
+
+一对一关系(方案二)：
+
+
+drop table if exists card;
+drop table if exists person;
+
+create table person(
+ id int primary key auto_increment,
+ name varchar(20) not null
+);
+insert into person(name) values('jack');
+insert into person(name) values('marry');
+
+create table card(
+ id int primary key auto_increment,
+ location varchar(20) not null,
+ constraint id_FK foreign key(id) references person(id)
+);
+
+insert into card(location) values('BJ');
+insert into card(location) values('GZ');
+insert into card(location) values('CS');//出错
+insert into card(location) values(NULL);
+
+
+
+一对多/多对一关系：
+drop table if exists employee;
+drop table if exists department;
+
+create table department(
+ id int primary key auto_increment,
+ name varchar(20) not null
+ 
+);
+insert into department(name) values('软件部');
+insert into department(name) values('销售部');
+
+create table employee(
+ id int primary key auto_increment,
+  name varchar(20) not null,
+ did int,
+ constraint did_FK foreign key(did) references department(id)
+);
+insert into employee(name,did) values('jack',1);
+insert into employee(name,did) values('marry',1);
+
+多对多关系：
+drop table if exists middle;
+drop table if exists student;
+drop table if exists teacher;
+
+
+create table if not exists student(
+ id int primary key auto_increment,
+  name varchar(20) not null;
+
+);
+insert into student(name) values('jack');
+insert into student(name) values('marry');
+
+
+create table if not exists teacher(
+ id int primary key auto_increment,
+ name varchar(20) not null
+);
+insert into teacher(name) values('赵');
+insert into teacher(name) values('蔡');
+
+
+create table if not exists middle(
+ sid int,
+ tid int,
+ constraint sid_FK foreign key(sid) references student(id),
+ constraint tid_FK foreign key(tid) references teacher(id),
+ primary key(sid,tid)
+);
+insert into middle(sid,tid) values(1,1);
+insert into middle(sid,tid) values(1,2);
+insert into middle(sid,tid) values(2,1);
+insert into middle(sid,tid) values(2,2);
+
+
+问题？查询"赵"所教过的所有学员
+
+select t.name as 教师,s.name as 学生 from 
+student as s,teacher as t,middle as m
+where t.name='赵'and m.sid = s.id and m.tid = t.id;
+

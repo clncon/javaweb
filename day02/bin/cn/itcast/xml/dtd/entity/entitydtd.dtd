@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!ENTITY %  TIP "姓名">
+   <!ELEMENT root (客户,员工)>
+   <!ELEMENT 客户   (%TIP;)>
+   <!ELEMENT 员工   (%TIP;)>
+   <!ELEMENT 姓名   (#PCDATA)>

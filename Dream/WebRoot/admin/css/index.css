@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+ul li{list-style:none}
+ul,ol{margin:0;padding:0}
+h1,h2,h3{margin:0px}
+p{ margin: 0px}
+.top-con{width: 100%;height: auto;}  
+.top-con img{width: 100%;height: auto;} 
+.w-1280{width:1280px;margin:0 auto;margin-bottom:6px}
+.show-ad{margin-top:9px;margin-bottom:55px}
+.show-ad ul li{margin-right:10px}
+.show-ad ul li a>img{width:420px;height:180px}
+.show-ad ul li.last{margin:0px}
+.fruit-kinds{position:relative}
+.fruit-kinds .title{padding-top:14px;padding-bottom:25px;height:67px;border-top:1px solid #cccccc}
+.fruit-kinds .title h3{font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#555555;line-height:38px;padding-left:8px}
+.fruit-kinds .title .img-new{padding-top:7px;padding-left:9px}
+.fruit-kinds .title a{color:#999999;font-size:14px;margin-top:7px}
+.fruit-kinds .new-kind .good-list,.fruit-kinds .new-kind2 .good-list{padding-bottom:45px}
+.fruit-kinds .good-list ul{margin:0 -4px;}
+.fruit-kinds .good-list ul li{position:relative;width:314px;margin-left:4px;margin-right:4px;margin-bottom:8px;overflow:hidden;cursor:pointer}
+.fruit-kinds .good-list ul li img{width:100%;height:100%}
+.fruit-kinds .new-kind .good-list ul li.first{width:314px;height:637px;margin-bottom:6px}
+.fruit-kinds .good-list ul li .img-scale{width:314px;height:314px;overflow:hidden}
+.fruit-kinds .good-list ul li.first .img-scale{height:637px;}
+.fruit-kinds .new-kind .good-list ul li .s-info,.fruit-kinds .new-kind2 .good-list ul li .s-info{display:none}
+.fruit-kinds .good-list ul li .wrap{position:absolute;top:322px;left:0px;width:314px;height:314px;background-color: #000;opacity: .5;filter:alpha(opacity=50);}
+.fruit-kinds .good-list ul li.first .wrap{top:637px;height:637px;}
+.fruit-kinds .good-list ul li img{-moz-transition:transform 0.3s;-webkit-transition:transform 0.3s;-o-transition:transform 0.3s;transition:transform 0.3s}
+.fruit-kinds .good-list ul li:hover img{-moz-transform:scale(1.1);-webkit-transform:scale(1.1);-ms-transform:scale(1);-o-transform:scale(1.1);transform:scale(1.1)}
+.fruit-kinds .good-list ul li .wrap a{display:block;width:100%;height:100%;text-decoration:none}
+.fruit-kinds .good-list ul li .wrap a p{font-size:18px;font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:20px;color:#bdbab8;text-align:center}
+.fruit-kinds .good-list ul li .wrap a p.first-p{color:#f6ab00;padding-top:65px}
+.fruit-kinds .new-kind .good-list ul li.first .wrap a p.first-p{padding-top:200px}
+.fruit-kinds .good-list ul li .wrap a span{display:block;width:200px;height:40px;border-radius:4px;border:1px solid  #f6ab00;text-align:center;line-height:40px;margin:50px auto 0;color:#f6ab00}
+.fruit-kinds .good-list ul li .wrap a p.small{font-size:14px}
+.fruit-kinds .good-list .s-img{margin-bottom:15px;width:314px;height:314px;overflow:hidden}
+.fruit-kinds .good-list ul li .s-info{margin-bottom:14px}
+.fruit-kinds .good-list ul li .s-info .s-name{padding-left:2px;max-width:155px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.fruit-kinds .good-list ul li .s-info .s-name span{font-size:14px;font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:24px;color:#555555}
+.fruit-kinds .good-list ul li .s-info .s-unit{margin-left:5px;max-width:120px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.fruit-kinds .good-list ul li .s-info .s-unit span{font-size:14px;font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif;line-height:25px;color:#999999}
+.fruit-kinds .good-list ul li .s-che{position:relative;top:-3px;right:2px;width:34px;height:34px;width:36px\9;height:36px\9;background:url(..img/icons.png) no-repeat -517px -243px;}
+.fruit-kinds .import-fruit .good-list{padding-bottom:0px}
+.fruit-kinds .title .img-new{*padding-top:12px}
+.zhezhao{position:fixed;z-index:9999;top:0;width:100%;height:100%;background-color:#000;opacity: .5;filter: alpha(opacity=50);display:none}
+.shop-cart{position:fixed;top:50%;left:50%;z-index:99999;width:524px;height:288px;padding:6px;margin:0 auto;margin:-144px 0 0 -262px;border:8px;border-color:rgba(0,0,0,0.5);background: rgba(0,0,0,0.16);display: none}
+.shop-top{height:40px;padding-right:17px;background-color:#eaeaea}
+.shop-top .cha{margin-top:10px;cursor:pointer}
+.shop-cart .shop-content{background-color:#ffffff}
+.shop-cart .shop-content .title{padding: 28px 90px 0;margin-bottom:22px}
+.shop-cart .shop-content .title .suc{width:60px;height:68px;background:url(..img/icons.png) no-repeat -8px -247px}
+.shop-cart .shop-content .title .adds{font-size:30px; margin:13px 0;font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#555555;white-space:nowrap;padding-left:20px}
+.shop-cart .shop-content .title .adds p{margin:0px}
+.shop-cart .shop-content p.row2{font-size:18px;font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#999999;white-space:nowrap;padding-left:4px;text-align: center;}
+.shop-cart .shop-content p.row2 em{color:#f6ab00;font-style:normal}
+.shop-cart .shop-content .choosed ul li{margin-top:24px;margin-bottom: 28px;}
+.shop-cart .shop-content .choosed ul li .fr-buy{margin-left: 100px}
+.shop-cart .shop-content .choosed .title-fruit{width: 353px; font-size:16px;font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#555555;padding-left:12px;padding-top:16px}
+.shop-cart .shop-content .choosed .title-fruit p{margin:0}
+.shop-cart .shop-content .choosed .title-fruit p em{font-style:normal}
+.product-info .price-info .buy .btn:active,.product-info .price-info .buy .btn.active{box-shadow:none}
+.buy .fr-buy a{color:#64a131;background:#f5ffed;border:1px solid #64a131;margin-right:11px}
+.fr-buy a,.fr-add a{display:block;width:147px;height:40px;font-family:"Hiragino Sans GB","microsoft yahei",sans-serif;font-size:16px;text-align:center;line-height:18px;line-height:20px\9\0}
+.fr-add .btn{color:#eff4ec;background:#64a131;border-color:#64a131}
+.fr-add .btn,.fr-buy .btn{border-radius:4px}
+.buy .btn:active,.buy .btn.active{box-shadow:none}
+
+
+/*pad閫傞厤*/
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){body{width:100%;height:100%}
+.show-ad{width:1000px;margin:0 auto;margin-bottom:30px}
+.show-ad ul li{padding-top:5px;width:33%;height:auto;margin-right:5px}
+.show-ad ul li img{width:100%;height:auto}
+.fruit-kinds{width:1000px}
+.fruit-kinds .good-list ul{margin:0 -4px;}
+.fruit-kinds .good-list ul li{width:24%;height:auto;margin-left:5px;margin-right:4px;margin-bottom:5px}
+.fruit-kinds .good-list ul li .s-info{margin-bottom: 0}
+.fruit-kinds .new-kind .good-list{padding-bottom:25px}
+.fruit-kinds .new-kind .good-list ul li{width:24%;height:auto}
+.fruit-kinds .new-kind .good-list ul li.first{width:24%;height:auto;margin-bottom:4px}
+.fruit-kinds .good-list ul li .img-scale{width:100%;height:auto}
+.fruit-kinds .good-list ul li.first .img-scale{width:100%;height:auto}
+.fruit-kinds .good-list ul li img{width:100%;height:auto}
+.fruit-kinds .new-kind .good-list ul li .wrap{display:none}
+.fruit-kinds .new-kind .good-list ul li .s-info{display:block;position:absolute;bottom:0;width:100%;height:40px;line-height:40px;margin-bottom:0;background-color: #fff;opacity: .75;filter:alpha(opacity=50);}
+.fruit-kinds .good-list ul li .s-che{width:35px;height:35px}
+.fruit-kinds .new-kind  .good-list ul li .s-info .s-name span,.fruit-kinds .new-kind  .good-list ul li .s-info .s-unit span{color:#000000}
+.fruit-kinds .good-list ul li .s-info .s-che{top:-34px}
+.fruit-kinds .new-kind .good-list ul li.first .s-info{position:absolute;width:100%;bottom:0}
+.fruit-kinds .good-list .s-img{width:100%;height:auto}
+.fruit-kinds .new-kind .good-list ul li .s-info .s-name span{width:115px}
+.fruit-kinds .new-kind .good-list ul li .s-info .s-unite{width:100px}
+.fruit-kinds .good-list ul li .s-info .s-unit{margin-left:0;width: 105px}
+.fruit-kinds .good-list ul li .s-info .s-name{width: 105px;}
+.fruit-kinds .good-list ul li .s-info .s-name span{width:115px}
+.fruit-kinds .good-list ul li .s-info .s-unit span{width:85px}
+.show-ad ul li a>img {width: 330px; height: 140px;}
+}
+@media only screen and (max-device-width:768px) and (orientation:portrait){body{width:100%;height:100%}
+.show-ad{width:750px;margin:0 auto;margin-bottom:15px}
+.show-ad ul li{padding-top:5px;width:32.888%;height:auto;margin-right:5px}
+.show-ad ul li img{width:100%;height:auto}
+.fruit-kinds{width:750px}
+.fruit-kinds .good-list ul{margin:0 -4px;}
+.fruit-kinds .good-list ul li{width:24%;height:auto;margin-left:3px;margin-right:4px;margin-bottom:0}
+.fruit-kinds .good-list .s-img{margin-bottom:5px}
+.fruit-kinds .new-kind .good-list{padding-bottom:15px}
+.fruit-kinds .new-kind .good-list ul li{width:24%;height:auto;margin-bottom:5px}
+.fruit-kinds .new-kind .good-list ul li.first{width:24%;height:auto;margin-bottom:5px}
+.fruit-kinds .good-list ul li .img-scale{width:100%;height:auto}
+.fruit-kinds .good-list ul li.first .img-scale{width:100%;height:auto}
+.fruit-kinds .good-list ul li img{width:100%;height:auto}
+.fruit-kinds .good-list ul li .s-info{margin-bottom:0}
+.fruit-kinds .good-list ul li .s-che{width:35px;height:35px}
+.fruit-kinds .good-list ul li .s-info .s-unit{margin-left:0}
+.fruit-kinds .new-kind .good-list ul li .wrap{display:none}
+.fruit-kinds .new-kind .good-list ul li .s-info{display:block;position:absolute;width:100%;bottom:-34px;background-color: #fff;opacity: .75;filter:alpha(opacity=50);}
+.fruit-kinds .new-kind .good-list ul li .s-info .s-name span,.fruit-kinds .new-kind .good-list ul li .s-info .s-unit span{color:#000000}
+.fruit-kinds .new-kind2 .good-list ul li .wrap{display:none}
+.fruit-kinds .new-kind2 .good-list{padding-bottom:15px}
+.fruit-kinds .new-kind2 .good-list ul li .s-info{display:block;position:absolute;width:100%;bottom:-34px;background-color: #fff;opacity: .75;filter:alpha(opacity=50);}
+.fruit-kinds .new-kind2 .good-list ul li .s-info .s-name span,.fruit-kinds .new-kind2 .good-list ul li .s-info .s-unit span{color:#000000}
+.fruit-kinds .good-list .s-img{width:100%;height:auto}
+.fruit-kinds .good-list ul li .s-name{float:none!important}
+.fruit-kinds .good-list ul li .s-unit{float:none!important;margin-left:0px}
+.fruit-kinds .good-list ul li .s-che{top:-33px}
+.show-ad ul li a>img {width: 246px;height: 105px;}
+}

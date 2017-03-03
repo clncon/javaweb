@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+	<body>	
+		<select multiple size="3">
+			<option value="bj">北京</option>
+			<option value="sh">上海</option>
+			<option value="gz">广州</option>
+		</select>
+		<script type="text/javascript">
+			/* //select元素是否有子元素
+			 //定位到select元素
+			 var selectElement = document.getElementsByTagName("select")[0];
+			 //判断
+			  if(selectElement.hasChildNodes()){
+			      alert("有子节点");
+			  }else{
+			     alert("无子节点");
+			  }
+			//option[2]元素是否有子元素
+			 //定位到option[2]元素
+			 var optionElement = document.getElementsByTagName("option")[2];
+			  var flag = optionElement.hasChildNodes();
+			  alert(flag==true?"有子节点":"无子节点"); */
+			//广州元素是否有子元素
+			  //定位到option[2]元素
+			 var optionElement = document.getElementsByTagName("option")[2];
+			  //取得option[2]的第一个节点
+			    var textElement = optionElement.firstChild;
+			  var flag = textElement.hasChildNodes();
+			  alert(flag==true?"有子节点":"无子节点"); 
+		</script>
+	</body>
+</html>
+
+
+
+
+

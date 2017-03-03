@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>a_jax_1.html</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  
+  <body>
+       <input type="button" value="点击我"/>
+        <hr/>
+        <div>
+           <!-- 在这里显示时间 -->
+        </div>
+         <script type="text/javascript">
+            //给按钮添加点击事件
+             document.getElementsByTagName("input")[0].onclick=function(){
+                //创建Ajax引擎对象
+                var xhr = createXHR();
+                //为Ajax创建引擎改变事件
+                 xhr.onreadystatechange=function(){
+                  
+                  //如果请求和响应都已经完成
+                      if(xhr.readyState==4){
+                         
+                        //响应是否正确
+                         if(xhr.status==200){
+                               //alert("jj");
+                            //取得响应的内容
+                             var msg = xhr.responseText;
+                             //查询div标签
+                             var divElement = document.getElementsByTagName("div")[0];
+                             //添加到divElement中
+                             divElement.innerHTML=msg;
+                         }
+                      }
+                    
+                 }
+                //准备发送异步请求到服务器
+                 xhr.open("get","/day31/AjaxServlet?time="+new Date().getTime());
+                 
+                 //真正发送请求
+                  xhr.send(null);
+             }
+            //根据不同的浏览器创建对应的AJAX引擎对象
+              function createXHR(){
+               var xhr=null;
+                  //如果是IE
+                 if(window.ActiveXObject){
+                    xhr = new ActiveXObject("microsoft.xmlhttp");
+                    
+                 }
+                   //如果是非IE
+                 else{
+                    xhr = new XMLHttpRequest();
+                 }
+                 return xhr;
+              }
+        </script>
+  </body>
+</html>

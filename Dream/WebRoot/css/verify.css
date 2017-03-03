@@ -1,0 +1,70 @@
+.w-1000{width:1000px;margin:0 auto}
+ul{padding:0px}
+ul li{list-style:none}
+ul,ol{margin-bottom:0px}
+p.member{font-size:20px;font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#999999;padding-top:15px;padding-bottom:16px;border-bottom:1px solid #ccc;margin-bottom:36px}
+.find_password ul li{position:relative;float:left;height:42px;color:#ffffff;font-size:20px;font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif;text-align:center;line-height:42px}
+.find_password ul.step1 li.first{width:352px;height:42px;padding-right:22px;background-color:#f6ab00;cursor:pointer}
+.find_password ul.step1 li i{position:absolute;right:0;top:0;width:22px;height:42px;background:url(..img/icons.png) no-repeat -11px -411px}
+.find_password ul.step1 li.second{position:relative;width:327px;padding-right:22px;color:#b9b9b9;background-color:#eaeaea;cursor:pointer}
+.find_password ul.step1 li.second i{position:absolute;right:0;top:0;width:22px;height:42px;background:url(..img/icons.png) no-repeat -11px -460px}
+.find_password ul.step1 li.third{width:319px;color:#b9b9b9;background-color:#eaeaea;cursor:pointer}
+.find_password ul.step2 li.first{width:352px;height:42px;padding-right:22px;background-color:#f6ab00;cursor:pointer}
+.find_password ul.step2 li.first  i{position:absolute;right:0;top:0;width:22px;height:42px;background:url(..img/icons.png) no-repeat -45px -411px}
+.find_password ul.step2 li.second{position:relative;width:327px;padding-right:22px;background-color:#f6ab00;cursor:pointer}
+.find_password ul.step2 li.second i{position:absolute;right:0;top:0;width:22px;height:42px;background:url(..img/icons.png) no-repeat -11px -411px}
+.find_password ul.step2 li.third{width:319px;color:#b9b9b9;background-color:#eaeaea;cursor:pointer}
+.find_password ul.step3 li.first{width:352px;height:42px;padding-right:22px;background-color:#f6ab00;cursor:pointer}
+.find_password ul.step3 li.first  i{position:absolute;right:0;top:0;width:22px;height:42px;background:url(..img/icons.png) no-repeat -45px -411px}
+.find_password ul.step3 li.second{position:relative;width:327px;padding-right:22px;background-color:#f6ab00;cursor:pointer}
+.find_password ul.step3 li.second i{position:absolute;right:0;top:0;width:22px;height:42px;background:url(..img/icons.png) no-repeat -45px -411px}
+.find_password ul.step3 li.third{width:319px;background-color:#f6ab00;cursor:pointer}
+.fill_name{padding-top:52px;height:357px;margin-bottom:181px}
+.fill_name ul{padding-left:213px;padding-right:264px}
+.regist_form ul li span{font-size:16px;font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif;padding-right:30px;color:#999999;line-height:50px;padding-left:53px}
+.regist_form ul li span.set-newcode{padding-left:22px}
+.regist_form ul li span.agin-sp{padding-left:0px;padding-right:20px}
+.regist_form ul li input{width:360px;border-radius:0;border:0px;height:50px;border:1px solid  #ccc;font-family: arial;}
+.regist_form ul li.verify_code{margin-top:21px}
+.regist_form ul li.verify_code input.send{width:200px;border-right:0px}
+.regist_form ul li.verify_code .input-group input,.regist_form ul li.verify_code .input-group span{height:50px}
+.regist_form ul li.verify_code .input-group span.input-group-addon{width:160px;padding:0px 40px;border:1px solid #64a131;border-radius:0;cursor:pointer;color:#64a131;background-color:#f5ffed;line-height:50px}
+.regist_form ul li.verify_code .input-group span.input-group-addon em{font-style:normal}
+.regist_form ul li.register{font-size:16px;font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#eef4eb;margin-top:21px;padding-left:131px;}
+.regist_form ul.refist_1 li.register button{border:none;border-radius:4px;width:169px;height:52px;outline:none;font-size: 18px;}
+.regist_form ul.refist_2 li.register button{border:none;border-radius:4px;width:169px;height:52px;outline:none;font-size: 18px;}
+.regist_form ul.refist_3 li{position:relative}
+.regist_form ul.refist_3 li span{position:absolute;top:65px;left:150px;width:20px;height:20px;cursor:pointer}
+.regist_form>ul>li{position:relative}
+.regist_form>ul>li .true{display:none;position:absolute;top:14px;right:-75px;width:22px;height:22px;background:url(..img/icons.png) no-repeat -12px -360px}
+.regist_form>ul>li input.hasError{border-color:#f53030;}
+.regist_form>ul>li .iconError{display:block;background:url("..img/icon-error.png") no-repeat 0 0}
+.regist_form>ul>li input.form-control:focus{border-color:#64A131;}
+
+/*pad閫傞厤*/
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){body{width:100%;height:100%}
+.fill_name{margin-bottom:0}
+}
+@media only screen and (min-device-width:768px) and (orientation:portrait){body{width:100%;height:100%}
+.w-750{width:750px;margin:0 auto}
+.find_password ul.step1 li.first,.find_password ul.step1 li.second,.find_password ul.step1 li.third{width:33.3%}
+.find_password ul.step2 li.first,.find_password ul.step2 li.second,.find_password ul.step2 li.third{width:33.3%}
+.find_password ul.step3 li.first,.find_password ul.step3 li.second,.find_password ul.step3 li.third{width:33.3%}
+.fill_name{padding-top:45px;margin-bottom:0}
+.fill_name ul{padding:0 60px}
+.regist_form .refist_1,.regist_form .refist_2,.regist_form .refist_3{width:100%;margin:0 auto}
+.regist_form ul.refist_1 li.pad-mobnumber span{padding-left:110px}
+.regist_form ul.refist_1 li.pad-mobnumber input{width:45%}
+.regist_form ul.refist_1 li.pad-yanzm span{padding-left:110px}
+.regist_form ul li.verify_code input.send{width:220px}
+.regist_form ul li.verify_code .input-group span.input-group-addon{width:138px;padding:0;text-align:center}
+.regist_form ul.refist_1 li.register button,.regist_form ul.refist_2 li.register button{margin-left:186px}
+.regist_form ul li span.set-newcode{padding-left:76px}
+.regist_form ul li span.set-newcode input{width:45%}
+.regist_form ul.refist_2 li input{width:45%}
+.regist_form ul li span.agin-sp{padding-left:46px;padding-right:29px}
+.regist_form ul.refist_3 ul li{width:60%;margin:0 auto}
+.regist_form ul.refist_3 ul li img{width:100%;height:auto}
+.regist_form>ul>li .true{right:30px}
+}/* CSS Document */
+

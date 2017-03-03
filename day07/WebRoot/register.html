@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>registerl.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+      <form method = "post" action = "/day07/Demo5">
+        <table border="1" align = "center">
+        <caption>注册页面</caption>
+        <tr>
+          <th>用户名</th>
+          <td><input type = "text"  name = "username"/></td>
+        </tr>
+        <tr>
+         <th>密码</th>
+         <td><input type = "password" name = "password"/></td>
+        </tr>
+        <tr>
+           <th>性别</th>
+          <td><input checked type = "radio" name = "gender" value ="man"/>男 
+             <input type = "radio" name = "gender" value ="woman"/>女 
+            </td>
+         
+        </tr>
+        <tr>
+           <th>爱好</th>
+           <td> 
+              <input checked type = "checkbox" name = "likes" value="sing"/>唱歌
+              <input  type = "checkbox" name = "likes" value="dance"/>跳舞
+              <input  type = "checkbox" name = "likes" value="ball"/>打球
+              <input  type = "checkbox" name = "likes" value="net"/>上网
+           </td>
+        </tr>
+        <tr>
+          <th>上传文件</th>
+          <td>
+              <input type = "file" name = "upfile"/>
+          </td>
+        </tr>
+        <tr>
+           <th>归属地</th>
+           <td>
+              <select name="city">
+               <option selected value = "bg">北京</option>
+               <option value = "sh">上海</option>
+               <option value = "gz">广州</option>
+               <option value = "hf">合肥</option>
+              </select>
+           </td>
+        </tr>
+        <tr>
+           <th>留言</th>
+           <td>
+             <textarea rows="6" cols="25" name = "words"></textarea>
+           </td>
+        </tr>
+        <tr>
+            <td><input type = "hidden" name = "id" value = "20160729"/></td>
+        </tr>
+        <tr>
+          <td  colspan = "2" bgcolor="green" align="center">
+            <input type = "submit" value="提交"/>
+             &nbsp  &nbsp &nbsp
+            <input type = "reset"  value="重置"/> 
+            
+          </td>
+        </tr>
+        
+        </table>
+      </form>
+  </body>
+</html>

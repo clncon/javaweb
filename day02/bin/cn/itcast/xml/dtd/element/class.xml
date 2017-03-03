@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root[
+   <!ELEMENT root   (桌子+)>
+    <!ATTLIST 桌子    width CDATA #REQUIRED
+                     make  CDATA #IMPLIED
+                     height CDATA #REQUIRED>
+    <!ELEMENT  桌子    (凳子+)>
+    <!ELEMENT  凳子 EMPTY>                  
+]>
+<root>
+    <桌子 width = "15" height = "45">
+    <凳子></凳子>
+      
+    </桌子>
+    </root>

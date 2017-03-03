@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>Demo11</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo11</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Demo12</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo12</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo4</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo4</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo5</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo5</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo6</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo6</servlet-class>
+    <init-param>
+         <param-name>html</param-name>
+         <param-value>86400</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo7</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo7</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo8</servlet-name>
+    <servlet-class>cn.itcast.web.servlet.Demo8</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo1</servlet-name>
+    <servlet-class>cn.itcast.web.response.Demo1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo2</servlet-name>
+    <servlet-class>cn.itcast.web.response.Demo2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Demo3</servlet-name>
+    <servlet-class>cn.itcast.web.response.Demo3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>identifyingCode</servlet-name>
+    <servlet-class>cn.itcast.web.response.identifyingCode</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>Demo11</servlet-name>
+    <url-pattern>/Demo11</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo12</servlet-name>
+    <url-pattern>/Demo12</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo4</servlet-name>
+    <url-pattern>/Demo4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo5</servlet-name>
+    <url-pattern>/Demo5</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo6</servlet-name>
+    <url-pattern>/Demo6</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo7</servlet-name>
+    <url-pattern>/Demo7</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo8</servlet-name>
+    <url-pattern>/Demo8</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo1</servlet-name>
+    <url-pattern>/Demo1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo2</servlet-name>
+    <url-pattern>/Demo2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Demo3</servlet-name>
+    <url-pattern>/Demo3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>identifyingCode</servlet-name>
+    <url-pattern>/identifyingCode</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

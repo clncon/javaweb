@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+                  
+<struts-config>
+    <form-beans>
+         <form-bean name="registerForm" type="cn.itcast.web.struts.form.RegisteForm"/>
+         <form-bean name = "loginForm" type="cn.itcast.web.struts.form.LoginForm"/>
+        
+    </form-beans>
+   <action-mappings>
+          <action path="/register"
+           type="cn.itcast.web.struts.actions.RegisterAndLoginAction"
+           name="registerForm"
+           scope="request"
+           validate="false"
+           parameter="RegisterMethod"/>
+          
+          <action path="/login"
+           type="cn.itcast.web.struts.actions.RegisterAndLoginAction"
+           name="loginForm"
+           scope="request"
+           validate="false"
+           parameter="LoginMethod"
+          />
+   </action-mappings>
+          <!--   配置自定义的过渡器 -->
+     <!-- <controller processorClass="cn.itcast.web.struts.core.MyRequestProcess"/> -->
+     <message-resources parameter="/cn/itcast/web/struts/config/message"/>
+     
+</struts-config>
+
+

@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+body{
+	background-image:url(../image/home-hero.jpg);
+	width:1350px;
+}
+
+.title{
+	/* background-color:red; */
+	text-align:center;
+	margin-top:5%;
+}
+
+form{
+	/* background-color:green; */
+	margin-left:39%;
+	margin-right:41%;
+	margin-top:5%;
+}
+
+input{
+	width:300px;
+	height:50px;
+}
+
+#sbutton{
+	height:45px;
+	background-color:#00AC00;
+	border:none;
+	font-size:20px;
+	font-family: sans-serif;
+	color:#FFFFFF;
+}
+
+#sbutton:hover{
+	background-color:green;
+}

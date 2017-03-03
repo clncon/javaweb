@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root[
+    <!ELEMENT root (电视台+)>
+    <!ELEMENT 电视台  (#PCDATA)>
+    <!ENTITY  CCTV "中央电视台"> 
+]>
+<root>
+     <电视台>&CCTV;</电视台>
+</root>

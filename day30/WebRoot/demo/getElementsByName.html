@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+	<body>
+		<input type="text" name="tname" value="国庆60年_1" />
+		<br>
+		<input type="text" name="tname" value="国庆60年_2" />
+		<br>
+		<input type="text" name="tname" value="国庆60年_3" />
+		<br>
+		<script type="text/javascript">
+			//分别取得value的值
+			
+			//取得所有的名字为tname的元素集合
+			 var InputElements = document.getElementsByName("tname");
+			 //循环
+			 for(var i=0;i<InputElements.length;i++){
+			      //取得每个文本框的值
+			       var InputValue = InputElements[i].value;
+			       alert(InputValue);
+			 }
+	  	</script>
+	</body>
+</html>

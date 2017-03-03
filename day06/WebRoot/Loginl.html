@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loginl.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+        <form method = "get" action = "/day06/LoginServlet">
+        
+        <table border = "1" align = "center">
+        <caption>用户登录(MVC设计模式)</caption>
+             <tr>
+               <th>用户名</th>
+               <td>
+                 <input type = "text" name = "username"/>
+               </td>
+             </tr>
+             <tr>
+               <th>密码</th>
+               <td>
+                 <input type = "password" name ="password"/>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                 <img src = "/day06/identifyingCode"/>
+               </td>
+               <td>
+                  <input type = "text" name = "checkcode"/>
+               </td>
+             </tr>
+             <tr>
+               <td  colspan = "2" align = "center" bgcolor="red">
+               <input type = "submit" value = "提交"/>
+               </td>
+             </tr>
+        </table>
+        </form>
+  </body>
+</html>

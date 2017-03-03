@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<family id="2014112501">
+		<address>
+			北京
+		</address>
+		<zipcode>2314587</zipcode>
+	</family>
+	<family id="2014112502">
+		<address>
+			上海
+		</address>
+		<zipcode>23145458</zipcode>
+	</family>
+	<family id="2014112503">
+		<address>
+			广州
+		</address>
+		<zipcode>231547845</zipcode>
+	</family>
+</root>

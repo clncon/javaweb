@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>exe_9.html</title>
+	
+   
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+     <style type="text/css">
+        .myClass{
+           border-style:dotted;
+            width:100px;
+        }
+     </style>
+   
+
+  <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script></head>
+  <body>
+  <div class="myClass">
+  <img  src="../images/lb.jpg"></img>
+  
+  </div>
+     <script type="text/javascript">
+        //查看图片是否显示 
+        var isShow=true;
+       $("div").mousemove(function(){
+         //alert(isShow);
+        if(isShow){
+          $("img").fadeOut(1000,function(){
+              isShow=false;
+             // $("div").removeClass("myClass");
+          });
+
+        }else if(!isShow){
+            $("img").fadeIn(1000,function(){
+              isShow=true;
+             /// $("div").addmoveClass("myClass");
+            });
+        }
+       });
+     </script>
+  </body>
+</html>

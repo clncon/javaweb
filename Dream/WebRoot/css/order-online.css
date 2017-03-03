@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cl{clear: both;}
+ul{padding: 0;}
+ul li{list-style: none}
+ul,ol{margin: 0;padding: 0}
+.p-common-header .container-fluid .collapse ul.icons-cart{width: 352px; height: 42px;background: url(..img/icons.png) no-repeat -39px -1005px;}
+.container-fluid .collapse ul.icons-cart li{margin-top: 7px;font-size:20px;font-family: "Hiragino Sans GB","Microsoft YaHei",sans-serif;text-align: center;}
+.container-fluid .collapse ul.icons-cart li.cur p{color:#64a131;}
+.container-fluid .collapse ul.icons-cart li span{color:#ffffff;}
+.container-fluid .collapse ul.icons-cart li p{margin-top: 12px;font-size:12px;}
+.container-fluid .collapse ul.icons-cart li.li1{position: relative;left:-10px;}
+.container-fluid .collapse ul.icons-cart li.li2{position: relative;left:80px;}
+.container-fluid .collapse ul.icons-cart li.li3{position: relative;left:165px;}
+.pay-succeed{width:1000px;margin: 0 auto;margin-top: 111px;padding-bottom: 33px;}
+.pay-succeed .succeed{padding-bottom: 10px;border-bottom: 1px solid #dddddd;}
+.pay-succeed .payorders{margin-left: 29px;}
+.pay-succeed .payorders p.order{ font:30px "Hiragino Sans GB","Microsoft YaHei",sans-serif; color:#64a131;  margin-top: 13px;}
+.pay-succeed .payorders p.min{ font:16px "Hiragino Sans GB","Microsoft YaHei",sans-serif; color:#999999;  margin-bottom: 0;}
+.pay-succeed .succeed-details{ padding:36px 0 15px 94px;border-bottom: 1px solid #dddddd;}
+.pay-succeed .succeed-details p{font:16px "Hiragino Sans GB","Microsoft YaHei",sans-serif;}
+.pay-succeed .succeed-details p.paied{ color:#555555;}
+.pay-succeed .succeed-details p.ordernum{ color:#999999;float: left;}
+.pay-succeed .succeed-details p.figure{color:#555555;float: left;}
+.pay-succeed .succeed-details a{display: block; font:16px "Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#f6ab00;}
+.pay-succeed .pay-box{margin-top: 50px;margin-bottom: 20px;}
+.pay-succeed .pay-box p.key{font:16px "Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#555555;}
+.pay-succeed .pay-box p.value span{display: inline-block;position: relative; top:3px; margin-right: 8px; width: 20px;height: 20px;background: url(..img/icons.png) no-repeat -62px -157px;}
+.pay-succeed .pay-box p.value {font:14px "Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#555555;}
+.pay-succeed .pay-box p.value em{color:#f6b342;font-style:normal;}
+.pay-succeed .pay-options .option-hd{border-left: 1px solid #ccc;border-bottom:1px solid #ccc;}
+.pay-succeed .pay-options .option-hd span{position: relative; width: 198px;height: 49px;top: 1px;background-color: #f1f1f1;border: 1px solid #ccc;border-bottom:1px solid #ccc;border-left: none; text-align: center;font:16px "Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height: 49px;line-height: 51px\9\0; color:#555555;cursor:pointer;}
+.pay-succeed .pay-options .option-hd span.cur{background-color: #ffffff;border-bottom:none;}
+.pay-succeed .pay-options .option-hd .last{width: 406px;border-bottom: 1px solid #ccc;position: relative;bottom: 1px;}
+.pay-succeed .pay-options .option-bd {width: 1000px;border: 1px solid #ccc;border-top: 1px solid transparent;}
+.pay-succeed .pay-options .option-bd ul.no2,.pay-succeed .pay-options .option-bd ul.no1{display: none;}
+.pay-succeed .pay-options .option-bd ul{padding: 30px 60px;}
+.pay-succeed .pay-options .option-bd ul  li{float: left;width: 219px;}
+.pay-succeed .pay-options .option-bd ul li>label{margin-right: 20px;margin-bottom: 20px}
+.pay-succeed .pay-options .option-bd ul.no1 li>label,.pay-succeed .pay-options .option-bd ul.no3 li>label{border: 1px solid #ddd;padding: 7px 6px;text-align: center;line-height: 30px;margin-left: 10px;}
+.pay-succeed .pay-options .option-bd ul.no2 li>label{display: block;width: 160px;height: 50px;margin-left: 10px;border:1px solid #ddd; vertical-align:middle;line-height: 50px;text-align: center;}
+.pay-succeed .pay-options .option-bd ul li p{font:14px "Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height: 55px; color:#555555;text-align: center;cursor: pointer;}
+.pay-succeed .pay-options .option-bd ul li p span{display:inline-block;width: 10px;height: 10px;background: url(..img/single.jpg) no-repeat;}
+.pay-succeed .pay-options .option-bd ul div a{display: block;width: 160px;height: 39px;font:14px "Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:39px;background-color: #64a131; text-decoration: none;text-align: center; border-radius: 4px;margin-left: 22px;margin-top: 9px;}
+.pay-succeed .pay-options .option-bd ul div a:link{color:#FFF;}
+.pay-succeed .pay-options .option-bd ul div a:visited{color:#fff;}
+.pay-succeed .pay-options .option-bd ul.no2 li span{color:#555555;font-family:"Hiragino Sans GB","Microsoft YaHei",sans-serif;}
+.pay-succeed .pay-options .option-bd ul.no2 li a{display: block; width: 180px;height: 39px;font:14px "Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:39px;background-color: #64a131; text-decoration: none; border-radius: 4px;text-align: center;}
+.pay-succeed .pay-options .option-bd ul.no2 li.a-pay{ margin-left: 20px;}
+/*纭鏀粯鎸夐挳鏍峰紡璋冩暣*/
+.pay-succeed .pay-options .option-bd ul .a-pay3 input.sure-pay{border:none;outline: none;}
+.pay-succeed .succeed-notice{padding:34px 8px 30px 10px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font:14px "Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#999999;}
+.pay-succeed .succeed-notice .notice-details{padding-left:24px;} 
+.pay-succeed .succeed-notice .notice-details em{font-style: normal;color:#f6ab00;}
+.pay-succeed .pay-options{margin-bottom:28px;}
+.pay-succeed .pay-options .option-bd ul li input{float: left;width:13px; ;position: relative;top:12px; top:18px\9\0;left: -3px;}
+.pay-succeed .pay-options .option-bd ul li label{float: left;width:160px }
+/*pad閫傞厤*/
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation: landscape){
+.container-fluid .collapse ul.icons-cart{margin-top: 8px;}
+.pay-succeed{margin-top:40px;}
+.pay-succeed .succeed{padding-bottom: 20px}
+}
+@media only  screen and (max-device-width:768px) and (orientation: portrait){
+.w-750{width: 750px;margin: 0 auto;}
+.pay-succeed .pay-options .option-bd ul{padding: 30px}
+.pay-succeed .pay-options .option-bd ul li{width: 33%;}
+.pay-succeed .pay-options .option-bd ul li input{top: 15px;left: 20px;}
+.pay-succeed .pay-options .option-bd ul.no1 li>label, .pay-succeed .pay-options .option-bd ul.no3 li>label{margin-left: 30px;}
+.pay-succeed .pay-options .option-bd ul.no2{margin-right: 0}
+.pay-succeed .pay-options .option-bd ul.no2 li>label{margin-left: 30px;}
+.container-fluid .collapse ul.icons-cart{margin-top: 8px;}
+.pay-succeed .succeed{padding-bottom: 20px}
+.pay-succeed .pay-options .option-bd ul.no1{/*margin: 20px;margin-top: 15px;*/}
+.pay-succeed .pay-options .option-bd ul.no1 li ul li{margin-bottom: 10px;}
+.pay-succeed .pay-options .option-bd ul.no1 li a{margin-top: 0;}
+.pay-succeed{margin-top:40px;}
+.pay-succeed .pay-options .option-bd{width: 100%;}
+.pay-succeed .pay-options .option-hd span{width: 20%;}
+.pay-succeed .pay-options .option-hd .last{width: 40%;bottom:-99%;}
+.pay-succeed .pay-options .option-bd ul div a{margin-left: 42px;}
+}

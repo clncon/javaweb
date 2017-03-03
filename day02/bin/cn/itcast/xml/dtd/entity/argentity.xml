@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root SYSTEM "entitydtd.dtd">
+<root>
+    <客户>
+      <姓名>王的</姓名>
+    </客户>
+      <员工>
+         <姓名>丽丽</姓名>
+      </员工>
+    </root>

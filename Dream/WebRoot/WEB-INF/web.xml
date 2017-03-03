@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.test.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ZhuceServle</servlet-name>
+  <servlet-class>com。test。ZhuceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ZhuceServle</servlet-name>
+  <url-pattern>/ZhuceServle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>RandomImage</servlet-name>
+		<servlet-class>
+			com.dream.comm.RandomImage
+		</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.dream.web.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>com.dream.web.CommentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ActivityServlet</servlet-name>
+    <servlet-class>com.dream.web.ActivityServlet</servlet-class>
+  </servlet>
+  
+<servlet>
+    <servlet-name>GoodsServlet</servlet-name>
+    <servlet-class>com.dream.web.GoodsServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>StoreServlet</servlet-name>
+    <servlet-class>com.dream.web.StoreServlet</servlet-class>
+  </servlet> 
+  
+  <servlet>
+    <servlet-name>SaleServlet</servlet-name>
+    <servlet-class>com.dream.web.SaleServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>VipServlet</servlet-name>
+    <servlet-class>com.dream.web.VipServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrdersServlet</servlet-name>
+    <servlet-class>com.dream.web.OrdersServlet</servlet-class>
+  </servlet>
+
+
+  	<servlet>
+    <servlet-name>RepertoryServlet</servlet-name>
+    <servlet-class>com.dream.web.RepertoryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GouwuServlet</servlet-name>
+    <servlet-class>com.dream.web.GouwuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MiMaServlet</servlet-name>
+    <servlet-class>com.dream.web.MiMaServlet</servlet-class>
+  </servlet>
+  
+  <filter> 
+	 <filter-name>CountFilter</filter-name>
+     <filter-class>com.test.CountFilter</filter-class>	
+     <init-param>
+     <param-name>count</param-name>
+     <param-value>100</param-value>
+     </init-param>
+	 </filter>
+	<filter-mapping>
+	<filter-name>CountFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	 <filter> 
+	 <filter-name>CharacterEncodingFilter</filter-name>
+     <filter-class>com.dream.web.filter.CharacterEncodingFilter</filter-class>	
+	 </filter>
+	<filter-mapping>
+	<filter-name>CharacterEncodingFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
+	  <servlet-mapping>
+    <servlet-name>GoodsServlet</servlet-name>
+    <url-pattern>/GoodsServlet</url-pattern>
+  </servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>RandomImage</servlet-name>
+		<url-pattern>/rand</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/CommentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StoreServlet</servlet-name>
+    <url-pattern>/StoreServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>SaleServlet</servlet-name>
+    <url-pattern>/SaleServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+    <servlet-name>ActivityServlet</servlet-name>
+    <url-pattern>/ActivityServlet</url-pattern>
+  </servlet-mapping>
+  
+<servlet-mapping>
+    <servlet-name>VipServlet</servlet-name>
+    <url-pattern>/VipServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrdersServlet</servlet-name>
+    <url-pattern>/OrdersServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RepertoryServlet</servlet-name>
+    <url-pattern>/RepertoryServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GouwuServlet</servlet-name>
+    <url-pattern>/GouwuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MiMaServlet</servlet-name>
+    <url-pattern>/MiMaServlet</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+   <error-code>404</error-code>
+   <location>/404.jsp</location>
+  </error-page>
+  
+  <error-page>
+   <error-code>500</error-code>
+   <location>/500.jsp</location>
+  </error-page>
+  
+  <error-page>
+   <error-code>505</error-code>
+   <location>/505.jsp</location>
+  </error-page>
+  
+</web-app>

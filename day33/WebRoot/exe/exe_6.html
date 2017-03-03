@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   
+  <script type="text/javascript" src="../js/jquery.min.js"></script></head>
+  <body>
+	<table border="1" align="center">
+		<tr>
+			<th>状态</th>
+			<th>用户名</th>
+		</tr>
+		<tr>
+			<td><input type="checkbox"/></td>
+			<td>赵</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox"/></td>
+			<td>钱</td>
+		</tr>		
+		<tr>
+			<td><input type="checkbox"/></td>
+			<td>孙</td>
+		</tr>	
+		<tr>
+			<td><input type="checkbox"/></td>
+			<td>李</td>
+		</tr>
+		<tr>
+			<td><input type="checkbox"/></td>
+			<td>周</td>
+		</tr>	
+		<tr>
+			<td><input type="button" value="全选中"/></td>
+			<td><input type="button" value="全取消"/></td>
+			<td><input type="button" value="全反选"/></td>
+		</tr>		
+	</table>
+	<script type="text/javascript"> 
+	      //设置‘全取消’按钮是隐藏的
+	        var flag=false;
+	       $("input[value='全取消']").attr("disabled","disabled");
+	     $("input[value='全选中']").click(function(){
+	         $(":checkbox").attr("checked","checked");
+	           //当全选中的按钮被触发时，将全选中按钮变为不可用
+	          $("input[value='全选中']").attr("disabled","disabled");
+	         if(!flag){
+	            //如果flag为false，将全取消的按钮不可用属性去掉
+	         $("input[value='全取消']").removeAttr("disabled");
+	          flag=true;
+	         }
+	     });
+	     
+	     $("input[value='全取消']").click(function(){
+	         $(":checkbox").removeAttr("checked");
+	             //当全取消按钮被触发时，将全取消按钮变为不可用
+	            $("input[value='全取消']").attr("disabled","disabled");
+	         if(flag){
+	             //当flag为true时，将全取消按钮的不可用去掉
+	            $("input[value='全选中']").removeAttr("disabled");
+	           flag=false;
+	         }
+	     });
+	     //反选
+	      $("input[value='全反选']").click(function(){
+	           //将被选中的选项变为不可用
+	            $(":checkbox:checked").attr("disabled","disabled");
+	            //将未被选中的选项加上checked
+	            $(":checkbox:not(:checked)").attr("checked","checked");
+	            //将不可用改为可用，并且去掉checked
+	            $(":checkbox:disabled").removeAttr("disabled").removeAttr("checked");
+	            
+	      });
+	</script>
+  </body>
+</html>
+
+
+

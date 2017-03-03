@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root SYSTEM "class.dtd">
+<root>
+    <student>
+         <name>王时</name>
+         <age>16</age>
+    </student>
+    </root>

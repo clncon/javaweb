@@ -1,0 +1,302 @@
+创建一个名为mydb1的数据库
+create database mydb1;
+
+创建一个使用utf8字符集的mydb2数据库
+create database if not exists mydb2 character set UTF8;
+
+创建一个使用utf8字符集，并带校对规则的mydb3数据库
+create database if not exists mydb3 character set UTF8 collate utf8_general_ci;
+
+
+查看当前数据库服务器中的所有数据库
+show databases;
+
+查看前面创建的mydb2数据库的定义信息
+show create database mydb2;
+
+删除前面创建的mydb1数据库
+drop database if exists mydb1;
+
+查看服务器中的数据库，并把其中mydb3库的字符集修改为gbk
+alter database mydb3 character set gbk;
+
+备份mydb2库中的数据，并恢复
+use mydb2;
+create table user (
+
+   name varchar(20) not null
+);
+insert into user(name) values('jack');
+insert into user(name) values('marry');
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+创建一张表，含有id/name/password/birthday字段
+create table user(
+  id int,
+  name varchar(20),
+  password varchar(6),
+  birthday timestamp,
+  salary float(6,2)
+);
+insert into user(id,name,password,salary) values(1,'jack','000000',5000.25);
+
+
+创建/查看一个员工表（并指明字符集为UTF8）
+drop table if exists employee;
+create table employee(
+  id int,
+  name varchar(20),
+  gender varchar(6),
+  birthday date,
+  entry_date date,
+  job varchar(20),
+  salary float(6,2),
+  resume text
+);
+insert into employee(id,name,gender,birthday,entry_date,job,salary,resume)
+values(1,'marry','000000','2011-10-8','2011-12-31','software',5000.14,'hello');
+
+
+在上面员工表的基本上增加一个image列。
+alter table employee
+add image blob;
+
+
+修改job列，使其长度为60。
+alter table employee
+modify job varchar(60) default 'teacher';
+
+删除gender列。
+alter table employee
+drop gender;
+
+表名改为user
+rename table employee to users;
+
+
+修改表的字符集为gbk。
+alter table employee
+character set gbk;
+
+
+列名name修改为username
+alter table user
+change name username varchar(20);
+
+
+向user表插入一条中文记录
+insert into user(id,username,birthday,entry_date,job,salary,resume)
+values(1,'杰克','2011-10-7','2011-12-31','softwore',6000.15,'hello');
+
+
+
+
+将所有员工薪水修改为6000元。
+update  user
+set salary = 6000;
+
+将姓名为’marry’的员工薪水修改为7000元。
+update user
+set salary = 7000
+where username = 'marry';
+
+
+将’jack’的薪水在原有基础上增加1000元。
+update user
+set salary = salary +1000
+where username = '杰克';
+
+
+删除表中名称为’jack’的记录。
+delete from user 
+where username = '杰克';
+
+
+删除表中所有记录
+delete from user;
+
+
+使用truncate删除表中记录。
+truncate table user;
+
+
+查询表中所有学生的信息
+select * from student;
+select id,name,chinese,english,math from student;
+select name,id,chinese,english,math from student;
+select name,math from student;
+
+
+
+查询表中所有学生的姓名和对应的英语成绩。
+select name,english from student;
+
+过滤表中重复数据。
+select distinct english from student;
+select distinct name,english from student;
+
+
+在所有学生分数上加10分特长分。
+select name as 姓名,math+10 数学 from student;
+
+统计每个学生的总分。
+select name as 姓名, chinese+math+english as 总分 from student;
+
+查询姓名为’张小明’的学生成绩
+select * from student
+where name = '张小明';
+
+
+查询英语成绩大于90分的同学
+select name from student
+where english>90;
+
+
+查询总分大于200分的所有同学
+select name as 姓名 ,math+english+chinese as 总分
+from student
+where math+english+chinese>200;
+
+
+查询英语分数在 80－90之间的同学。
+select * from student
+where english>=80 and english<=90;
+
+select * from student
+where english between 80 and 90;
+
+查询数学分数为89,90,91的同学
+select * from student
+where math =89 or math =90 or math =91;
+
+
+select * from student
+where math in(80,90,91);
+
+
+查询所有姓’李’的学生成绩。
+select * from student
+where name like '李%';
+
+select * from student
+where name like '%李';
+
+select * from student
+where name like '%李%';
+
+
+在网站中，多条件查询中用到
+select * from student
+where name like '%%';
+
+
+select * from student
+where name like '_李';
+
+
+select * from student
+where math is null;
+
+查询数学分>80且语文分>80的同学。
+select * from student
+where math>80 and chinese>80;
+
+
+对数学成绩排序后输出
+升序
+select name,math from student
+order by math asc;
+
+降序
+select name ,math from student
+order by math desc;
+
+
+
+对总分降序后输出。
+select name,math+chinese+english 
+ from student
+order by math+chinese+english desc;
+
+
+
+对姓’李’的学生总分降序输出。
+select name as 姓名,math+chinese+english as 总分
+from student
+where name like '李%'
+order by math+chinese+english desc;
+
+
+统计一个班级共有多少学生？
+select count(*) as 人数 from student;
+
+统计数学成绩大于80的学生有多少个？
+select count(*) as 人数 from student
+where math >80;
+
+统计总分大于250的人数有多少？
+select count(*) as 人数 from student
+where math+chinese+english>250;
+
+
+select count(english) from student;
+select count(math) from student;
+
+
+统计一个班级数学总成绩。
+select sum(math) from student;
+
+
+select sum(name)
+from student;
+
+统计一个班级语文、英语、数学各科的总成绩。
+
+select sum(chinese) as 语文总成绩,
+       sum(math) as 数学总成绩,
+       sum(english) as 英语总成绩
+from student;
+
+
+
+统计一个班级语文、英语、数学的成绩总和。
+select sum(chinese)+sum(math)+sum(english) as 班级总分
+from student;
+
+
+统计一个班级语文成绩平均分。
+select sum(chinese)/count(chinese) as 平均分 
+from student;
+
+
+select sum(math)/count(math)from student;
+
+
+select sum(math)/count(*)from student;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

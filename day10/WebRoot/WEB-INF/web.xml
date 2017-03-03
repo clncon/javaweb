@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>	
+  
+  <servlet>
+    <servlet-name>qq</servlet-name>
+    <jsp-file>/body.jsp</jsp-file>
+    <init-param>
+         <param-name>email</param-name>
+         <param-value>98753fg@qq.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>countServlet</servlet-name>
+    <servlet-class>cn.itcast.web.jsp.countServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>listBookServlet</servlet-name>
+    <servlet-class>cn.itcast.web.shopcar.controller.listBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyServlet</servlet-name>
+    <servlet-class>cn.itcast.web.shopcar.controller.buyServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteBookServlet</servlet-name>
+    <servlet-class>cn.itcast.web.shopcar.controller.deleteBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>clearCarServlet</servlet-name>
+    <servlet-class>cn.itcast.web.shopcar.controller.clearCarServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateBookServlet</servlet-name>
+    <servlet-class>cn.itcast.web.shopcar.controller.updateBookServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+ 
+  <servlet-mapping>
+      <servlet-name>qq</servlet-name>
+      <url-pattern>/aaa/bbb/ccc.html</url-pattern>
+  
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>countServlet</servlet-name>
+    <url-pattern>/countServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>listBookServlet</servlet-name>
+    <url-pattern>/listBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyServlet</servlet-name>
+    <url-pattern>/buyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteBookServlet</servlet-name>
+    <url-pattern>/deleteBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>clearCarServlet</servlet-name>
+    <url-pattern>/clearCarServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateBookServlet</servlet-name>
+    <url-pattern>/updateBookServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

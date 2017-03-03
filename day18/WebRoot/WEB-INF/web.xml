@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>uploadServlet</servlet-name>
+    <servlet-class>cn.itacst.web.servlet.upload.uploadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>uploadServlet2</servlet-name>
+    <servlet-class>cn.itacst.web.servlet.upload.uploadServlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListFileServlet</servlet-name>
+    <servlet-class>cn.itacst.web.servlet.download.ListFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>downloadServlet</servlet-name>
+    <servlet-class>cn.itacst.web.servlet.download.downloadServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>uploadServlet</servlet-name>
+    <url-pattern>/uploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>uploadServlet2</servlet-name>
+    <url-pattern>/uploadServlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListFileServlet</servlet-name>
+    <url-pattern>/ListFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>downloadServlet</servlet-name>
+    <url-pattern>/downloadServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

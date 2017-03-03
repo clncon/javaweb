@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+  <body>
+  	<input type="text" value="国庆60周年" id="tid"/>
+  	<script type="text/javascript">
+		//取得input元素的名字，类型，值
+		 //取得input元素
+		 var InputElement = document.getElementById("tid");
+		 //打印节点的名字和类型和值
+		  alert(InputElement.nodeName+":"+InputElement.nodeType+":"+InputElement.nodeValue);
+		//取得type属性名字，类型，值
+		    //取得type属性的节点
+		      var typeNode =  InputElement.getAttributeNode("type");
+		      alert(typeNode.nodeName+":"+typeNode.nodeType+":"+typeNode.nodeValue);
+  	</script>
+  </body>
+</html>

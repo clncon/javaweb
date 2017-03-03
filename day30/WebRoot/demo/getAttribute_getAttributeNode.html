@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	</head>
+  <body>
+	<p name="beijing" id="bj">北京</p> 
+  	<script type="text/javascript">
+		//取得name/id属性的值
+		   //定位到p节点、
+		  var pElement = document.getElementById("bj");
+		   //取得name属性的值和id属性的值
+		     var name = pElement.getAttribute("name");
+		     var id = pElement.getAttribute("id");
+		     //打印
+		     alert("name"+":"+name+"***"+"id:"+id);
+		//取得name/id属性节点的名称/类型/值
+		  
+		   //取得name和id的属性的节点
+		    var nameNode = pElement.getAttributeNode("name");
+		    var idNode = pElement.getAttributeNode("id");
+		    //打印
+		     alert(nameNode.nodeName+":"+nameNode.nodeType+":"+nameNode.nodeValue);
+		     alert(idNode.nodeName+":"+nameNode.nodeType+":"+nameNode.nodeValue);
+ 	</script>
+  </body>
+</html>
